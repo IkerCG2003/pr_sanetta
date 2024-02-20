@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS `bd_productos_sanetta`;
 CREATE DATABASE IF NOT EXISTS `bd_productos_sanetta`;
 USE `bd_productos_sanetta`;
 
@@ -10,7 +11,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `tbl_alergenos`
 --
 
-CREATE TABLE `tbl_alergenos` (
+CREATE TABLE IF NOT EXISTS `tbl_alergenos` (
   `id_alergeno` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_alergeno` char(45) NOT NULL,
   PRIMARY KEY (`id_alergeno`)
@@ -33,7 +34,7 @@ INSERT INTO `tbl_alergenos` (`id_alergeno`, `nombre_alergeno`) VALUES
 -- Estructura de tabla para la tabla `tbl_categoria`
 --
 
-CREATE TABLE `tbl_categoria` (
+CREATE TABLE IF NOT EXISTS `tbl_categoria` (
   `id_categoria` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_categoria` char(45) NOT NULL,
   PRIMARY KEY (`id_categoria`)
@@ -56,7 +57,7 @@ INSERT INTO `tbl_categoria` (`id_categoria`, `nombre_categoria`) VALUES
 -- Estructura de tabla para la tabla `tbl_tamanos`
 --
 
-CREATE TABLE `tbl_tamanos` (
+CREATE TABLE IF NOT EXISTS `tbl_tamanos` (
   `id_tamano` int(11) NOT NULL AUTO_INCREMENT,
   `tamano` char(45) NOT NULL,
   PRIMARY KEY (`id_tamano`)
@@ -77,7 +78,7 @@ INSERT INTO `tbl_tamanos` (`id_tamano`, `tamano`) VALUES
 -- Estructura de tabla para la tabla `tbl_productos`
 --
 
-CREATE TABLE `tbl_productos` (
+CREATE TABLE IF NOT EXISTS `tbl_productos` (
   `id_producto` int(11) NOT NULL AUTO_INCREMENT,
   `codigo_producto` char(45) NOT NULL,
   `nombre_producto` varchar(45) NOT NULL,
