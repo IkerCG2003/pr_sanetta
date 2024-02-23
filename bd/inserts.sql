@@ -267,173 +267,412 @@ INSERT INTO `tbl_categorias` (`id_categoria`, `nombre_categoria`) VALUES
 (4, 'Rolls'),
 (5, 'Pasteleria');
 
--- Insertar datos en la tabla de productos
-INSERT INTO tbl_productos (codigo_producto, nombre_producto, unidades, gluten, azucar, id_tamano, conservacion_producto) VALUES
-('BBr-01', 'Pastelito Brownie', 1, 'Sin', 'Con', 1, 'frío'),
-('BBr-02', 'Pastelito Brownie Cremoso', 1, 'Sin', 'Con', 1, 'frío'),
-('BBr-03', 'Caja Mini Brownie (35 und.)', 1, 'Sin', 'Con', 1, 'frío'),
-('BCo-01', 'Cookie Avellana y Naranja', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BCo-02', 'Cookie Chocolate Blanco y Cacahuetes', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BCo-03', 'Cookie Chocolate y Nueces', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BCo-04', 'Cookie Doble Chocolate', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BCo-05', 'Cookie Pistacho y Frambuesa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BCo-06', 'Cookie Romero y Limón', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BCo-07', 'Cookie Avellana y Naranja SG', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BCo-08', 'Cookie Chocolate Blanco y Cacahuetes SG', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BCo-09', 'Cookie Chocolate y Nueces SG', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BCo-10', 'Cookie Doble Chocolate SG', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BCo-11', 'Cookie Romero y Limón SG', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BCu-01', 'Cup Cakes', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BEn-01', 'Ensaimada Cabello de Angel', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BEn-02', 'Ensaimada Normal', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BEn-03', 'Ensaimada Nutella', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BEn-04', 'Ensaimada Rellena con Nata', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BEn-05', 'Ensaimada Rellena Dulce de Leche', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BEn-06', 'Ensaimada Sobrasada', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BMc-01', 'Macarrons', 1, 'Sin', 'Con', 1, 'frío'),
-('BMc-02', 'Macarrons pistacho', 1, 'Sin', 'Con', 1, 'frío'),
-('BMc-03', 'Macarrons Cassís Y Chocolate', 1, 'Sin', 'Con', 1, 'frío'),
-('BMc-04', 'Macarrons Chocolate', 1, 'Sin', 'Con', 1, 'frío'),
-('BMc-05', 'Macarrons Crema de Limón', 1, 'Sin', 'Con', 1, 'frío'),
-('BMc-06', 'Macarrons Frambuesa', 1, 'Sin', 'Con', 1, 'frío'),
-('BMg-01', 'Magdalenas Francesas con Chocolate Blanco', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BMg-02', 'Magdalenas Arándanos', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BMg-03', 'Magdalenas vainilla y chocolate', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BMg-04', 'Magdalenas Francesas con Nueces', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BMg-05', 'Magdalenas doble Chocolate', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BMg-06', 'Magdalenas Vainilla', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BMg-07', 'Magdalenas Francesas con Chocolate Blanco SG', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BMg-08', 'Magdalenas Francesas con Nueces SG', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('Pmo-02', 'Pastelito Mousse Choco y Frambuesa', 1, 'Sin', 'Con', 1, 'frío'),
-('BPn-01', 'Panellets de Pistacho', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BPn-02', 'Panellets de Café de Cereales', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BPn-03', 'Panellets de Piñon', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BPn-04', 'Panellets de Almendra', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BPn-05', 'Panellets de Coco', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BPn-06', 'Panellets de Choco-Coco', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BPt-01', 'Pastas De Te Variadas C/A /0.5Kg', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BPt-02', 'Pastas De Te Variadas C/A /1kg', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BPt-03', 'Pastas De Te S/A /0.5Kg', 1, 'Con', 'Sin', 1, 'temperatura ambiente'),
-('BPt-04', 'Pastas De Te S/A /1kg', 1, 'Con', 'Sin', 1, 'temperatura ambiente'),
-('BTr-01', 'Trenza Chocolate', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BTr-02', 'Trenza Nata', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BTr-03', 'Trenza Crema', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BTr-04', 'Trenza Trufa', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BTr-05', 'Trenza Chocolate blanco', 1, 'Sin', 'Con', 1, 'temperatura ambiente'),
-('BTx-01', 'Txurro Normal', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-02', 'Txurro Chocolate', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-03', 'Txurro Chocolate Blanco', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-04', 'Txurro Avellana', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-05', 'Txurro Crema', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-06', 'Txurro Fresa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-07', 'Txurro Chocolate con Naranja', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-08', 'Txurro Chocolate con Menta', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-09', 'Txurro Trufa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BTx-10', 'Txurro Vainilla', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-01', 'Americano', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-02', 'Donuts Glasse', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-03', 'Donuts Glasse Chocolate', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-04', 'Donuts Glasse Frambuesa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-05', 'Donuts Glasse Fresa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-06', 'Donuts Glasse Naranja', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-07', 'Donuts Glasse Menta', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-08', 'Donuts Glasse Platano', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-09', 'Donuts Glasse Zanahoria', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-10', 'Donuts Glasse Cafe', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-11', 'Donuts Glasse Limon', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-12', 'Donuts Glasse Te', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-13', 'Donuts Glasse Mango', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-14', 'Donuts Glasse Manzana', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-15', 'Donuts Glasse Vainilla', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-16', 'Donuts Glasse chocolate Blanco', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-17', 'Donuts Glasse Chocolate con Leche', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-18', 'Donuts Glasse Nata', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-19', 'Donuts Glasse Dulce de Leche', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-20', 'Donuts Glasse Chocolate Blanco y Negro', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-21', 'Donuts Glasse Chocolate con Cereales', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-22', 'Donuts Glasse Chocolate con Almendras', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-23', 'Donuts Glasse Chocolate con Nueces', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-24', 'Donuts Glasse Chocolate con Avellanas', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-25', 'Donuts Glasse Chocolate con Pistachos', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-26', 'Donuts Glasse Chocolate con Pera', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-27', 'Donuts Glasse Chocolate con Platano', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-28', 'Donuts Glasse Chocolate con Zanahoria', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-29', 'Donuts Glasse Chocolate con Calabaza', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-30', 'Donuts Glasse Chocolate con Coco', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-31', 'Donuts Glasse Chocolate con Frambuesa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-32', 'Donuts Glasse Chocolate con Fresa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-33', 'Donuts Glasse Chocolate con Guayaba', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-34', 'Donuts Glasse Chocolate con Kiwi', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-35', 'Donuts Glasse Chocolate con Mango', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-36', 'Donuts Glasse Chocolate con Maracuya', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-37', 'Donuts Glasse Chocolate con Melocotón', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-38', 'Donuts Glasse Chocolate con Naranja', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-39', 'Donuts Glasse Chocolate con Papaya', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-40', 'Donuts Glasse Chocolate con Piña', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-41', 'Donuts Glasse Chocolate con Platano', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-42', 'Donuts Glasse Chocolate con Sandia', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-43', 'Donuts Glasse Chocolate con Uva', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-44', 'Donuts Glasse Chocolate con Zanahoria', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-45', 'Donuts Glasse Chocolate con Pera', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-46', 'Donuts Glasse Chocolate con Calabaza', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-47', 'Donuts Glasse Chocolate con Caramelo', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-48', 'Donuts Glasse Chocolate con Almendras', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-49', 'Donuts Glasse Chocolate con Avellanas', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-50', 'Donuts Glasse Chocolate con Pistachos', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-51', 'Donuts Glasse Chocolate con Avellanas y Pistachos', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-52', 'Donuts Glasse Chocolate con Avellanas y Coco', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-53', 'Donuts Glasse Chocolate con Avellanas y Fresa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-54', 'Donuts Glasse Chocolate con Avellanas y Frambuesa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-55', 'Donuts Glasse Chocolate con Avellanas y Guayaba', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-56', 'Donuts Glasse Chocolate con Avellanas y Kiwi', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-57', 'Donuts Glasse Chocolate con Avellanas y Mango', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-58', 'Donuts Glasse Chocolate con Avellanas y Maracuya', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-59', 'Donuts Glasse Chocolate con Avellanas y Melocotón', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-60', 'Donuts Glasse Chocolate con Avellanas y Naranja', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-61', 'Donuts Glasse Chocolate con Avellanas y Papaya', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-62', 'Donuts Glasse Chocolate con Avellanas y Piña', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-63', 'Donuts Glasse Chocolate con Avellanas y Platano', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-64', 'Donuts Glasse Chocolate con Avellanas y Sandia', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-65', 'Donuts Glasse Chocolate con Avellanas y Uva', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-66', 'Donuts Glasse Chocolate con Avellanas y Zanahoria', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-67', 'Donuts Glasse Chocolate con Avellanas y Pera', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-68', 'Donuts Glasse Chocolate con Avellanas y Calabaza', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-69', 'Donuts Glasse Chocolate con Avellanas y Caramelo', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-70', 'Donuts Glasse Chocolate con Avellanas y Nueces', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-71', 'Donuts Glasse Chocolate con Avellanas y Coco', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-72', 'Donuts Glasse Chocolate con Avellanas y Fresa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-73', 'Donuts Glasse Chocolate con Avellanas y Frambuesa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-74', 'Donuts Glasse Chocolate con Avellanas y Guayaba', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-75', 'Donuts Glasse Chocolate con Avellanas y Kiwi', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-76', 'Donuts Glasse Chocolate con Avellanas y Mango', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-77', 'Donuts Glasse Chocolate con Avellanas y Maracuya', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-78', 'Donuts Glasse Chocolate con Avellanas y Melocotón', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-79', 'Donuts Glasse Chocolate con Avellanas y Naranja', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-80', 'Donuts Glasse Chocolate con Avellanas y Papaya', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-81', 'Donuts Glasse Chocolate con Avellanas y Piña', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-82', 'Donuts Glasse Chocolate con Avellanas y Platano', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-83', 'Donuts Glasse Chocolate con Avellanas y Sandia', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-84', 'Donuts Glasse Chocolate con Avellanas y Uva', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-85', 'Donuts Glasse Chocolate con Avellanas y Zanahoria', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-86', 'Donuts Glasse Chocolate con Avellanas y Pera', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-87', 'Donuts Glasse Chocolate con Avellanas y Calabaza', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-88', 'Donuts Glasse Chocolate con Avellanas y Caramelo', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-89', 'Donuts Glasse Chocolate con Nueces', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-90', 'Donuts Glasse Chocolate con Coco', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-91', 'Donuts Glasse Chocolate con Fresa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-92', 'Donuts Glasse Chocolate con Frambuesa', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-93', 'Donuts Glasse Chocolate con Guayaba', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-94', 'Donuts Glasse Chocolate con Kiwi', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-95', 'Donuts Glasse Chocolate con Mango', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-96', 'Donuts Glasse Chocolate con Maracuya', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-97', 'Donuts Glasse Chocolate con Melocotón', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-98', 'Donuts Glasse Chocolate con Naranja', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-99', 'Donuts Glasse Chocolate con Papaya', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-100', 'Donuts Glasse Chocolate con Piña', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-101', 'Donuts Glasse Chocolate con Platano', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-102', 'Donuts Glasse Chocolate con Sandia', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-103', 'Donuts Glasse Chocolate con Uva', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-104', 'Donuts Glasse Chocolate con Zanahoria', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-105', 'Donuts Glasse Chocolate con Pera', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-106', 'Donuts Glasse Chocolate con Calabaza', 1, 'Con', 'Con', 1, 'temperatura ambiente'),
-('BAm-107', 'Donuts Glasse Chocolate con Caramelo', 1, 'Con', 'Con', 1, 'temperatura ambiente');
+INSERT INTO tbl_productos (codigo_producto, nombre_producto, unidades, id_tamano)
+VALUES 
+('BBr-01', 'Pastelito Brownie', 15, 1),
+('BBr-02', 'Pastelito Brownie Cremoso', 15, 1),
+('BBr-03', 'Caja Mini Brownie (35 und.)', 35, 1),
+('BCo-01', 'Cookie Avellana y Naranja', 15, 1),
+('BCo-02', 'Cookie Chocolate Blanco y Cacahuetes', 15, 1),
+('BCo-03', 'Cookie Chocolate y Nueces', 15, 1),
+('BCo-04', 'Cookie Doble Chocolate', 15, 1),
+('BCo-05', 'Cookie Pistacho y Frambuesa', 15, 1),
+('BCo-06', 'Cookie Romero, Tomillo y Limón', 15, 1),
+('BCu-01', 'Cup Cakes', 24, 1),
+('BEn-01', 'Ensaimada Cabello de Angel', 1, 1),
+('BEn-02', 'Ensaimada Normal', 1, 1),
+('BEn-03', 'Ensaimada Nutella', 1, 1),
+('BEn-04', 'Ensaimada Rellena con Nata', 1, 1),
+('BEn-05', 'Ensaimada Rellena Dulce de Leche', 1, 1),
+('BEn-06', 'Ensaimada Sobrasada', 1, 1),
+('BMc-01', 'Macarrons', 1, 1),
+('BMc-02', 'Macarrons Avellana', 5, 1),
+('BMc-03', 'Macarrons Cassís Y Chocolate', 5, 1),
+('BMc-04', 'Macarrons Chocolate', 5, 1),
+('BMc-05', 'Macarrons Crema de Limón', 5, 1),
+('BMc-06', 'Macarrons Frambuesa', 5, 1),
+('BMg-01', 'Magdalenas Francesas con Chocolate Blanco', 44, 1),
+('BMg-02', 'Magdalenas Arándanos', 13, 1),
+('BMg-03', 'Magdalenas Doble Choco', 13, 1),
+('BMg-04', 'Magdalenas Francesas con Nueces', 44, 1),
+('BMg-05', 'Magdalenas Vainilla / Vainilla Chocolate', 44, 1),
+('Pmo-01', 'Pastelito Vainilla', 15, 1),
+('Pmo-02', 'Pastelito Mousse Choco y Frambuesa', 15, 1),
+('BPn-01', 'Panellets Piñones', 6, 1),
+('BPn-02', 'Panellets Piñones', 15, 1),
+('BPn-03', 'Panellets Variados', 15, 1),
+('BPn-04', 'Panellets Variados', 25, 1),
+('BPt-01', 'Pastas De Te Variadas C/A /0.5Kg', 1, 1),
+('BPt-02', 'Pastas De Te Variadas C/A /1kg', 1, 1),
+('BPt-03', 'Pastas De Te Variadas S/A /0.5Kg', 1, 1),
+('BPt-04', 'Pastas De Te Variadas S/A /1Kg', 1, 1),
+('BRl-01', 'Roll Canella', 15, 1),
+('BRl-02', 'Roll Cebolla Queso', 15, 1),
+('BRl-03', 'Roll de Cebolla Caramelizada', 15, 1),
+('BRl-04', 'Roll de Crema Pastelera', 15, 1),
+('BRl-05', 'Roll de Escallivada', 15, 1),
+('BRl-06', 'Roll de Espinaca a la Catalana', 15, 1),
+('BRl-07', 'Roll de Sobrasada', 15, 1),
+('BRl-08', 'Roll Dulce de Leche', 15, 1),
+('BRl-09', 'Roll Limón Merengue', 15, 1),
+('BRl-10', 'Roll Manzana Caramelizada', 15, 1),
+('BRl-11', 'Roll Nutella Casera', 15, 1),
+('BRl-12', 'Roll Sobrasada Casera', 15, 1),
+('BRs-01', 'Rosquillas C/A', 24, 1),
+('BRs-02', 'Rosquillas S/A', 24, 1),
+('Bta-01', 'Apple Crumble', 15, 1),
+('BTa-02', 'Pink Velvet', 1, 4),
+('BTa-03', 'Pink Velvet', 5, 1),
+('BTa-04', 'Pink Velvet', 1, 2),
+('BTr-01', 'Trufas Lima / Limón', 8, 1),
+('BTr-02', 'Trufas Naranja', 8, 1),
+('BVa-01', 'Vasito Apple', 20, 1),
+('BVa-02', 'Vasito Limón', 20, 1),
+('BVa-03', 'Vasito Tiramisú', 20, 1),
+('NNa-01', 'Pastelito Crudivegano Cacao y Avellana S/A', 15, 1),
+('NNa-02', 'Pastelito Crudivegano Cacao y Avellana Agave', 15, 1),
+('PCh-01', 'Cheesecake Chocolate, nueces y cookies', 1, 4),
+('PCh-02', 'Cheesecake Chocolate, nueces y cookies', 1, 2),
+('PCh-04', 'Cheesecake Coco y Piña', 1, 4),
+('PCh-05', 'Cheesecake Coco y Piña', 1, 2),
+('PCh-07', 'Cheesecake Dulce de Leche y Canela', 1, 4),
+('PCh-08', 'Cheesecake Dulce de Leche y Canela', 1, 2),
+('PCh-10', 'Cheesecake Frutos Rojos', 1, 4),
+('PCh-11', 'Cheesecake Frutos Rojos', 15, 1),
+('PCh-12', 'Cheesecake Frutos Rojos', 1, 2),
+('PCh-14', 'Cheesecake Limón y Merengue', 15, 1),
+('PCh-15', 'Cheesecake Ind. Maracuyá', 15, 1),
+('PCh-16', 'Cheesecake Ind. Nueces', 15, 1),
+('PCh-17', 'Cheesecake Limón y Merengue', 1, 4),
+('PCh-18', 'Cheesecake Limón y Merengue', 1, 2),
+('PCh-20', 'Cheesecake Mango y Franbuesa', 1, 4),
+('PCh-21', 'Cheesecake Mango y Franbuesa', 1, 2),
+('PCh-23', 'Cheesecake Maracuyá y Naranja', 1, 4),
+('PCh-24', 'Cheesecake Maracuyá y Naranja', 1, 2),
+('PNa-01', 'Raw de Romero, Limón y Coco', 15, 1),
+('PNa-02', 'Raw de Frambuesa', 15, 1),
+('PNa-03', 'Raw de Mango y Maracuya', 15, 1),
+('PTa-01', 'Tarta Bourdaloue', 5, 4),
+('PTa-02', 'Tarta Bourdaloue', 5, 3),
+('PTa-03', 'Tarta de Calabacín', 1, 4),
+('PTa-04', 'Tarta de Manzana', 1, 4),
+('PTa-05', 'Tarta de Manzana', 1, 2),
+('PTa-06', 'Tarta Limón y Merengue', 1, 2),
+('PTa-07', 'Tarta Limón y Merengue', 1, 4),
+('PTa-09', 'Tarta Sacher Frambuesa', 1, 2),
+('PTa-10', 'Tarta Sacher Frambuesa', 1, 4),
+('PTa-12', 'Tarta Sacher Maracuyá', 1, 2),
+('PTa-13', 'Tarta Sacher Maracuyá', 1, 4),
+('PTa-15', 'Tartaleta de Limón', 15, 1),
+('PTa-16', 'Tiramisú Frutos Rojos', 20, 1),
+('PTa-17', 'Tarta Banana Bread (8 Pax)', 1, 2),
+('PTa-18', 'Tarta Carrot Cake', 1, 4),
+('PTa-19', 'Tarta Carrot Cake', 15, 1),
+('PTa-20', 'Tarta Carrot Cake', 1, 2),
+('PTa-22', 'Chocolate Bomb', 1, 4),
+('PTa-23', 'Chocolate Bomb', 1, 2),
+('PTa-25', 'Tarta German Cake', 1, 4),
+('PTa-27', 'Tarta Selva Negra', 1, 2),
+('PTa-28', 'Tarta Selva Negra', 1, 4),
+('PTa-29', 'Tarta Plum Cake Choco (8 Pax)', 1, 2),
+('PTa-30', 'Tarta Plum Cake Choco y Naranja (8 Pax)', 1, 2),
+('PTa-31', 'Tarta Plum Cake Limón (8 Pax)', 1, 2),
+('PTa-32', 'Caja Mini Carrot Cake (35 und.)', 1, 3),
+('PTa-33', 'Tarta Plum Cake Limón y Merengue (8 Pax)', 1, 2),
+('SPz-01', 'Pizza Margarita con tomate, Orégano y Mozzarella Vegana', 1, 4),
+('SPz-02', 'Pizza Margarita con tomate, Orégano y Mozzarella Vegana', 1, 2),
+('SQu-01', 'Mini Quiche Calabacín', 15, 1),
+('SQu-02', 'Mini Quiche Cebolla Caramelizada', 15, 1),
+('SQu-03', 'Mini Quiche Champiñones', 15, 1),
+('SQu-04', 'Mini Quiche Espinaca', 15, 1),
+('SQu-05', 'Mini Quiche Puerro', 15, 1),
+('SQu-06', 'Quiche Calabacín (6 Pax)', 1, 2),
+('SQu-07', 'Quiche Cebolla Caramelizada (6 Pax)', 1, 2),
+('SQu-08', 'Quiche Champiñones (6 Pax)', 1, 2),
+('SQu-09', 'Quiche Espinaca (6 Pax)', 1, 2),
+('SQu-10', 'Quiche Puerro (6 Pax)', 1, 2),
+('SQu-11', 'Coca de Verduras', 1, 4),
+('SQu-12', 'Coca de Verduras', 1, 2),
+('Pmo-03', 'Delicioso de Calabaza', 15, 1),
+('Pna-04', 'Raw de Mfrutos Rojos', 15, 1);
+
+-- Inserciones en tbl_producto_alergeno
+
+-- BBr-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BBr-01'), 3), -- Soja
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BBr-01'), 5); -- Dioxido de azufre y sulfitos
+
+-- BBr-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BBr-02'), 3), -- Soja
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BBr-02'), 5); -- Dioxido de azufre y sulfitos
+
+-- BBr-03
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BBr-03'), 3), -- Soja
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BBr-03'), 5); -- Dioxido de azufre y sulfitos
+
+-- BCo-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BCo-01'), 2); -- Granos de sesamo
+
+-- BCo-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BCo-02'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BCo-02'), 5); -- Dioxido de azufre y sulfitos
+
+-- BCo-03
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BCo-03'), 2); -- Granos de sesamo
+
+-- BCo-05
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BCo-05'), 2); -- Granos de sesamo
+
+-- BCu-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BCu-01'), 1), -- Cacahuetes
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BCu-01'), 3); -- Soja
+
+-- BEn-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BEn-01'), 2); -- Granos de sesamo
+
+-- BEn-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BEn-02'), 2); -- Granos de sesamo
+
+-- BEn-03
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BEn-03'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BEn-03'), 3); -- Soja
+
+-- BEn-05
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BEn-05'), 2); -- Granos de sesamo
+
+-- BEn-06
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BEn-06'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BEn-06'), 3); -- Soja
+
+-- BMc-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-01'), 1); -- Cacahuetes
+
+-- BMc-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-02'), 1), -- Cacahuetes
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-02'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-02'), 3); -- Soja
+
+-- BMc-03
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-03'), 1), -- Cacahuetes
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-03'), 5); -- Dioxido de azufre y sulfitos
+
+-- BMc-04
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-04'), 1); -- Cacahuetes
+
+-- BMc-05
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-05'), 1); -- Cacahuetes
+
+-- BMc-06
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMc-06'), 1); -- Cacahuetes
+
+-- BMg-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMg-01'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMg-01'), 3), -- Soja
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMg-01'), 5); -- Dioxido de azufre y sulfitos
+
+-- BMg-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMg-02'), 2); -- Granos de sesamo
+
+-- BMg-04
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMg-04'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMg-04'), 5); -- Dioxido de azufre y sulfitos
+
+-- BMg-05
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BMg-05'), 2); -- Granos de sesamo
+
+-- Pmo-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'Pmo-01'), 4); -- Granos de sésamo
+
+-- Pmo-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'Pmo-02'), 5); -- Dioxido de azufre y sulfitos
+
+-- BTr-01
+-- No tiene alérgenos
+
+-- BTr-02
+-- No tiene alérgenos
+
+-- BVa-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BVa-01'), 5); -- Dioxido de azufre y sulfitos
+
+-- BVa-03
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'BVa-03'), 5); -- Dioxido de azufre y sulfitos
+
+-- NNa-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'NNa-01'), 2); -- Granos de sesamo
+
+-- NNa-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'NNa-02'), 2); -- Granos de sesamo
+
+-- PCh-01
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-01'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-02'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-04
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-04'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-05
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-05'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-07
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-07'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-08
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-08'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-10
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-10'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-11
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-11'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-12
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-12'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-14
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-14'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-15
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-15'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-16
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-16'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-17
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-17'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-18
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-18'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-20
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-20'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-21
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-21'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-23
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-23'), 5); -- Dioxido de azufre y sulfitos
+
+-- PCh-24
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PCh-24'), 5); -- Dioxido de azufre y sulfitos
+
+-- PNa-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PNa-02'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PNa-02'), 3); -- Soja
+
+-- PNa-03
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PNa-03'), 3); -- Soja
+
+-- PTa-02
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-02'), 3); -- Soja
+
+-- PTa-03
+-- No tiene alérgenos
+
+-- PTa-04
+-- No tiene alérgenos
+
+-- PTa-05
+-- No tiene alérgenos
+
+-- PTa-06
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-06'), 5); -- Dioxido de azufre y sulfitos
+
+-- PTa-07
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-07'), 5); -- Dioxido de azufre y sulfitos
+
+-- PTa-09
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-09'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-09'), 3); -- Soja
+
+-- PTa-10
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-10'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-10'), 3); -- Soja
+
+-- PTa-12
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-12'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-12'), 3); -- Soja
+
+-- PTa-13
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-13'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-13'), 3); -- Soja
+
+-- PTa-15
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-15'), 5); -- Dioxido de azufre y sulfitos
+
+-- PTa-16
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-16'), 5); -- Dioxido de azufre y sulfitos
+
+-- PTa-22
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-22'), 5); -- Dioxido de azufre y sulfitos
+
+-- PTa-23
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'PTa-23'), 5); -- Dioxido de azufre y sulfitos
+
+-- Pna-04
+INSERT INTO tbl_producto_alergeno (id_producto, id_alergeno) VALUES 
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'Pna-04'), 2), -- Granos de sesamo
+((SELECT id_producto FROM tbl_productos WHERE codigo_producto = 'Pna-04'), 3); -- Soja
+
